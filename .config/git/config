@@ -1,0 +1,11 @@
+[core]
+    editor = vim
+    whitespace = error
+[init]
+    defaultBranch = master
+[status]
+    branch = true
+[commit]
+    gpgsign = true
+[extensions]
+    objectformat = sha256
