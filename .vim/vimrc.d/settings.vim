@@ -1,24 +1,27 @@
 syntax on
 filetype plugin indent on
-colorscheme gruvbox
 set background=dark
-set encoding=utf8
 set laststatus=2
+set title
+
+set number relativenumber
+set cursorline
+set nowrap
+set incsearch hlsearch
+set autoindent smartindent cindent
+set ignorecase smartcase
+set nocompatible
+set expandtab
+set splitbelow splitright
 
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set scrolloff=8
-set colorcolumn=100
+set colorcolumn=80
 
-set number relativenumber
-set cursorline
-set nowrap
-set expandtab
-set incsearch hlsearch
-set autoindent smartindent cindent
-set ignorecase smartcase
-set nocompatible
+set encoding=utf-8
+set fileencoding=utf-8
 
 set ffs=unix
 set history=100
@@ -28,3 +31,4 @@ set noswapfile
 
 set wildmenu
 set magic
+set wildmode=longest,list,full

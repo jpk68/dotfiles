@@ -4,5 +4,11 @@ augroup cpp_headers
     autocmd BufRead,BufWrite *.h set filetype=cpp
 augroup END
 
-" use real tabs in makefiles
+" use tabs instead of spaces for makefiles
 autocmd FileType make setlocal noexpandtab
+
+" disable automatic commenting on newline
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" delete trailing whitespace on save
+autocmd BufWritePre * %s/\s\+$//e
