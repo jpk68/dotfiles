@@ -18,7 +18,7 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set scrolloff=8
-set colorcolumn=80
+set colorcolumn=100
 
 set encoding=utf-8
 set fileencoding=utf-8
@@ -32,3 +32,7 @@ set noswapfile
 set wildmenu
 set magic
 set wildmode=longest,list,full
+
+" use thin cursor in insert mode
+let &t_SI = "\e[5 q"
+let &t_EI = "\e[2 q"
