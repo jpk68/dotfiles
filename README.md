@@ -1,3 +1,6 @@
 # jpk68's dotfiles
 
-work-in-progress
+How to use:
+
+1. Clone the repo
+2. Run `bootstrap.sh`
