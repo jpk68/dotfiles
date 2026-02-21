@@ -22,6 +22,7 @@ echo "Creating symlinks..."
 ln -s "$DIR/.config/foot/" "$HOME/.config/foot/"
 ln -s "$DIR/.config/git/" "$HOME/.config/git/"
 ln -s "$DIR/.config/mpv/" "$HOME/.config/mpv/"
+ln -s "$DIR/.config/lf/" "$HOME/.config/lf/"
 
 ln -s "$DIR/.vimrc" "$HOME/.vimrc"
 ln -s "$DIR/.vim/vimrc.d" "$HOME/.vim/vimrc.d"
