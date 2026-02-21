@@ -14,17 +14,18 @@ else
     git clone "$REPO" "$DIR"
 fi
 
-# If this directory doesn't yet exist (otherwise it will just error)
-mkdir ~/.vim
+# Create directory if it doesn't yet exist
+mkdir -p ~/.vim
 
 echo "Creating symlinks..."
-ln -sf "$DIR/.config/foot/" "$HOME/.config/foot/"
-ln -sf "$DIR/.config/git/" "$HOME/.config/git/"
-ln -sf "$DIR/.config/mpv/" "$HOME/.config/mpv/"
 
-ln -sf "$DIR/.vim/vimrc.d/" "$HOME/.vim/vimrc.d/"
-ln -sf "$DIR/.vimrc" "$HOME/.vimrc"
+ln -s "$DIR/.config/foot/" "$HOME/.config/foot/"
+ln -s "$DIR/.config/git/" "$HOME/.config/git/"
+ln -s "$DIR/.config/mpv/" "$HOME/.config/mpv/"
 
-ln -sf "$DIR/.gdbinit" "$HOME/.gdbinit"
+ln -s "$DIR/.vimrc" "$HOME/.vimrc"
+ln -s "$DIR/.vim/vimrc.d" "$HOME/.vim/vimrc.d"
+
+ln -s "$DIR/.gdbinit" "$HOME/.gdbinit"
 
 echo "Done."
