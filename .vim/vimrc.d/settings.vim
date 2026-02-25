@@ -25,13 +25,14 @@ set fileencoding=utf-8
 
 set ffs=unix
 set history=100
+set noundofile
 set nobackup
-set nowb
+set nowritebackup
 set noswapfile
 
 set wildmenu
 set magic
-set wildmode=longest,list,full
+set wildmode=longest:list,full
 
 " use thin cursor in insert mode
 let &t_SI = "\e[5 q"
