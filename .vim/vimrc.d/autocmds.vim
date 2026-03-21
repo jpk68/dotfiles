@@ -11,7 +11,7 @@ augroup no_auto_comment
 augroup END
 
 " use tabs instead of spaces for makefiles
-autocmd FileType make,cpp,hpp,c,h setlocal noexpandtab
+autocmd FileType make setlocal noexpandtab
 
 " delete trailing whitespace on save
 autocmd BufWritePre * %s/\s\+$//e
