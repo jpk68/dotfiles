@@ -1,5 +1,5 @@
-#!/bin/bash
-set -e
+#!/usr/bin/env bash
+set -eu
 
 REPO="https://codeberg.org/jpk68/dotfiles.git"
 DIR="$HOME/dotfiles"
