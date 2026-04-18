@@ -10,8 +10,6 @@ augroup no_auto_comment
     autocmd BufEnter * setlocal formatoptions-=cro
 augroup END
 
-" use tabs instead of spaces for makefiles
-autocmd FileType make setlocal noexpandtab
-
-" delete trailing whitespace on save
-autocmd BufWritePre * %s/\s\+$//e
+" formatting options for specific file types
+autocmd FileType make,go setlocal noexpandtab
+autocmd FileType ocaml setlocal shiftwidth=2 tabstop=2
