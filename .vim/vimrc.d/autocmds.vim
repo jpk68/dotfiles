@@ -12,4 +12,4 @@ augroup END
 
 " formatting options for specific file types
 autocmd FileType make,go setlocal noexpandtab
-autocmd FileType ocaml setlocal shiftwidth=2 tabstop=2
+autocmd FileType ocaml,toml setlocal shiftwidth=2 tabstop=2
