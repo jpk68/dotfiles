@@ -19,6 +19,7 @@ mkdir -p ~/.vim
 
 echo "Creating symlinks..."
 
+ln -s "$DIR/.config/fish/" "$HOME/.config/fish"
 ln -s "$DIR/.config/foot/" "$HOME/.config/foot"
 ln -s "$DIR/.config/mpv/" "$HOME/.config/mpv"
 ln -s "$DIR/.config/lf/" "$HOME/.config/lf"
