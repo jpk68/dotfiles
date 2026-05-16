@@ -1,7 +1,14 @@
 " treat .h files as .hpp for syntax highlighting
 augroup cpp_headers
     autocmd!
-    autocmd BufRead,BufWrite *.h set filetype=cpp
+    autocmd BufRead,BufWrite,BufNewFile *.h set filetype=cpp
+augroup END
+
+" syntax highlighting for service files
+augroup service_files
+    autocmd!
+    autocmd BufRead,BufWrite,BufNewFile *.service,*.socket,*.target,*.timer set filetype=systemd
+    autocmd BufRead,BufWrite,BufNewFile /etc/init.d/*,*.openrc,*.openrcconf set filetype=sh
 augroup END
 
 " disable automatic commenting on newline
