@@ -1,7 +1,6 @@
 call plug#begin()
 Plug 'https://codeberg.org/ziglang/zig.vim'
 Plug 'morhetz/gruvbox'
-Plug 'bfrg/vim-c-cpp-modern'
 Plug 'tpope/vim-abolish'
 Plug 'vimwiki/vimwiki'
 call plug#end()
