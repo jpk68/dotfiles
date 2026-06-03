@@ -6,12 +6,12 @@ DIR="$HOME/dotfiles"
 
 # If the directory already exists
 if [ -d "$DIR" ]; then
-	echo "Directory already exists, pulling latest changes..."
-	cd "$DIR"
-	git pull origin master
+    echo "Directory already exists, pulling latest changes..."
+    cd "$DIR"
+    git pull origin master
 else
-	echo "Cloning repo..."
-	git clone "$REPO" "$DIR"
+    echo "Cloning repo..."
+    git clone "$REPO" "$DIR"
 fi
 
 # Create directory if it doesn't yet exist
