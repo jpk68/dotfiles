@@ -5,6 +5,7 @@ alias vi="vim"
 alias py="python3"
 alias maek="make"
 
+alias gdf="git diff"
 alias gds="git diff --staged"
 alias gst="git status"
 alias glg="git log"
