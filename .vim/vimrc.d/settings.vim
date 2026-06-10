@@ -34,6 +34,8 @@ set wildmenu
 set magic
 set wildmode=longest:list,full
 
+let g:netrw_banner=0
+
 " use thin cursor in insert mode
 let &t_SI = "\e[5 q"
 let &t_EI = "\e[2 q"

@@ -1,9 +1,7 @@
 set -g fish_greeting
 
-alias cloc="scc"
 alias vi="vim"
 alias py="python3"
-alias maek="make"
 
 alias gdf="git diff"
 alias gds="git diff --staged"
