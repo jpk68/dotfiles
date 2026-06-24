@@ -9,6 +9,8 @@ alias gst="git status"
 alias glg="git log"
 alias glo="git log --oneline"
 
+alias gs="gst"
+
 set -gx GCCRS_INCOMPLETE_AND_EXPERIMENTAL_COMPILER_DO_NOT_USE 1
 set -gx EDITOR "vim"
 

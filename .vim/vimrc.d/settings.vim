@@ -4,7 +4,7 @@ set background=dark
 set laststatus=2
 set title
 
-set number relativenumber
+set number
 set cursorline
 set nowrap
 set incsearch hlsearch
