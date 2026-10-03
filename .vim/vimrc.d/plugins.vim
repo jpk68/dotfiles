@@ -13,8 +13,6 @@ Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 call plug#end()
 
-colorscheme slate
-
 " don't run zig fmt on quit
 let g:zig_fmt_autosave = 0
 

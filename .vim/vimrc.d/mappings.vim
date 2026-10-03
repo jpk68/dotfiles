@@ -11,4 +11,4 @@ nnoremap <leader>x :x<CR>
 nnoremap <leader>h :nohlsearch<CR>
 
 " macro to remove comments that start with double slashes
-noremap rcl :g/^\s*\/\/\s*/d<CR>
+nnoremap <leader>rcl :g/^\s*\/\/\s*/d<CR>

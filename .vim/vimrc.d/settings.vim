@@ -1,16 +1,18 @@
 syntax on
 filetype plugin indent on
-set background=dark
+
 set laststatus=2
 set title
+
+set clipboard=unnamed
+set ttyfast
 
 set number
 set cursorline
 set nowrap
 set incsearch hlsearch
-set autoindent smartindent cindent
+set autoindent
 set ignorecase smartcase
-set nocompatible
 set expandtab
 set splitbelow splitright
 
@@ -34,6 +36,9 @@ set wildmenu
 set magic
 set wildmode=longest:list,full
 set pumheight=12
+
+set updatetime=300
+set signcolumn=yes
 
 let g:netrw_banner=0
 
