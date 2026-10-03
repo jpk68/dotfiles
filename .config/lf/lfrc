@@ -1,3 +1,11 @@
+set shell sh
+set shellopts '-eu'
+set ifs "\n"
+
 set hidden true
 set ignorecase true
 set smartcase true
+
+set icons true
+set drawbox true
+set wrapscan true
