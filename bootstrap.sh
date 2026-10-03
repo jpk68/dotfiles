@@ -1,18 +1,7 @@
 #!/usr/bin/env bash
 set -eu
 
-REPO="https://github.com/jpk68/dotfiles.git"
-DIR="$HOME/dotfiles"
-
-# If the directory already exists
-if [ -d "$DIR" ]; then
-    echo "Directory already exists, pulling latest changes..."
-    cd "$DIR"
-    git pull origin master
-else
-    echo "Cloning repo..."
-    git clone "$REPO" "$DIR"
-fi
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Create directories if they don't yet exist
 mkdir -p ~/.vim

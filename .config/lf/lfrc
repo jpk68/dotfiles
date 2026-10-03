@@ -7,5 +7,4 @@ set ignorecase true
 set smartcase true
 
 set icons true
-set drawbox true
 set wrapscan true
