@@ -1,11 +1,19 @@
 call plug#begin()
-Plug 'https://codeberg.org/ziglang/zig.vim'
 Plug 'morhetz/gruvbox'
-Plug 'tpope/vim-abolish'
+
 Plug 'vimwiki/vimwiki'
+Plug 'tpope/vim-abolish'
+
+Plug 'https://codeberg.org/ziglang/zig.vim'
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'elixir-editors/vim-elixir'
+
+Plug 'prabirshrestha/vim-lsp'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
 call plug#end()
 
-colorscheme gruvbox
+colorscheme slate
 
 " don't run zig fmt on quit
 let g:zig_fmt_autosave = 0

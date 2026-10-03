@@ -21,6 +21,12 @@ augroup END
 autocmd FileType make,go setlocal noexpandtab
 autocmd FileType ocaml,toml setlocal shiftwidth=2 tabstop=2
 autocmd BufRead,BufWrite,BufNewFile *.sage set filetype=python
+autocmd FileType vim setlocal shiftwidth=4 tabstop=4 expandtab
 
 " delete trailing whitespace on save
-" autocmd BufWritePre * %s/\s\+$//e
+autocmd BufWritePre * %s/\s\+$//e
+
+augroup FormatVimScript
+    autocmd!
+    autocmd BufWritePre *.vim,*.vimrc normal! gg=G``
+augroup END

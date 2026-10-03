@@ -33,6 +33,7 @@ set noswapfile
 set wildmenu
 set magic
 set wildmode=longest:list,full
+set pumheight=12
 
 let g:netrw_banner=0
 
