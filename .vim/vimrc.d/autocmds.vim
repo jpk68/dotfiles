@@ -23,8 +23,8 @@ autocmd FileType ocaml,toml setlocal shiftwidth=2 tabstop=2
 autocmd BufRead,BufWrite,BufNewFile *.sage,*pythonrc set filetype=python
 
 " delete trailing whitespace on save, except where it's meaningful (e.g. markdown line breaks)
-autocmd BufWritePre *.md,*.markdown let b:skip_trim_trailing_whitespace = 1
-autocmd BufWritePre * if !get(b:, 'skip_trim_trailing_whitespace') | let b:_wsview = winsaveview() | silent! %s/\s\+$//e | call winrestview(b:_wsview) | endif
+" autocmd BufWritePre *.md,*.markdown let b:skip_trim_trailing_whitespace = 1
+" autocmd BufWritePre * if !get(b:, 'skip_trim_trailing_whitespace') | let b:_wsview = winsaveview() | silent! %s/\s\+$//e | call winrestview(b:_wsview) | endif
 
 augroup FormatVimScript
     autocmd!
