@@ -6,3 +6,8 @@ How to use:
 2. Run `./bootstrap.sh`
 
 Alternatively, just download the script and run it.
+
+## Requirements
+
+- [`vim-plug`](https://github.com/junegunn/vim-plug) (for loading Vim plugins)
+- [`sh`](https://github.com/mvdan/sh), [Prettier](https://github.com/prettier/prettier), and [`mbake`](https://github.com/EbodShojaei/bake) (for formatting stuff)
