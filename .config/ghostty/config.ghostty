@@ -12,3 +12,6 @@ gtk-titlebar = false
 
 cursor-style = block
 cursor-style-blink = false
+
+working-directory = home
+window-inherit-working-directory = false

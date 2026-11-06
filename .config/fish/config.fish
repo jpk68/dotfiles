@@ -12,10 +12,7 @@ alias glg="git log"
 alias glo="git log --oneline"
 alias gbv="git branch -v"
 alias grv="git remote -v"
-
-alias gs="gst"
-
-set -gx GCCRS_INCOMPLETE_AND_EXPERIMENTAL_COMPILER_DO_NOT_USE 1
+alias gca="git commit --amend --no-edit"
 
 fish_add_path $HOME/.cargo/bin
 fish_add_path $HOME/bin $HOME/.local/bin
